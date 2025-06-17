@@ -1,0 +1,51 @@
+#wrap,
+#header,
+section,
+#footer {
+  width: 100%;
+  min-width: 1600px;
+}
+
+.top_banner.on {
+  width: 100%;
+  height: 480px;
+  background-image: url(https://t1.daumcdn.net/brunch/op/2c1c53c5019f4d6ebde44bc925e47cbf.png);
+}
+
+.top_banner ul {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.top_banner ul li {
+  width: 100%;
+  height: 100%;
+}
+.top_banner ul a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.top_banner ul a img {
+  width: 960px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.top_banner .btn_close {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(//t1.daumcdn.net/brunch9/static/images/pc/ico_brunch_v9_230901.png)
+    no-repeat 0 0;
+  background-position: -285px 0;
+  border: 0;
+  right: 355px;
+  top: 200px;
+  z-index: 9999;
+}
