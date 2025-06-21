@@ -6,7 +6,7 @@ const scroll = (e) => {
     window.addEventListener('wheel', (e) => {
         if (window.scrollY === 0 && e.deltaY < 0) {
             topBanner.classList.add('on');
-        } else {
+        } else if (window.scrollY > 480) {
             topBanner.classList.remove('on');
         }
     });
