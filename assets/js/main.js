@@ -1,7 +1,7 @@
 const get = (target) => document.querySelector(target);
 const getAll = (target) => document.querySelectorAll(target);
 
-const scroll = (e) => {
+const scrollTop = () => {
     const topBanner = get('.top_banner');
     window.addEventListener('wheel', (e) => {
         if (window.scrollY === 0 && e.deltaY < 0) {
@@ -12,8 +12,21 @@ const scroll = (e) => {
     });
 };
 
+const scrollDown = () => {
+    const header = document.querySelector('.header');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            header.classList.add('on');
+        } else {
+            header.classList.remove('on');
+        }
+    });
+};
+
 const init = () => {
-    scroll();
+    scrollTop();
+    scrollDown();
 };
 
 init();

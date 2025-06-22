@@ -64,9 +64,17 @@ section,
   border: 1px solid #000;
   position: relative;
 }
-#header .btn_menu svg {
+#header .btn_menu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  display: block;
   width: 27px;
-  height: 20px;
+  height: 27px;
+}
+#header .btn_menu i {
+  font-size: 27px;
 }
 #header .logo {
   display: block;
@@ -78,6 +86,44 @@ section,
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  left: 35px;
+}
+#header .right-menu {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#header .right-menu button {
+  width: 64px;
+  height: 28px;
+  border: 1px solid #959595;
+  border-radius: 16px;
+  color: #666;
+  font-family: Noto Sans Light, sans-serif;
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#header .right-menu .btn_find {
+  width: 28px;
+  height: 28px;
+}
+#header .right-menu .btn_find i {
+  font-size: 28px;
+}
+
+#header.on {
+  position: fixed;
 }
 
 #section1 {
