@@ -24,9 +24,17 @@ const scrollDown = () => {
     });
 };
 
+const closeBtn = () => {
+    const btn = get('.btn_close');
+    const topBanner = get('.top_banner');
+    btn.addEventListener('click', () => {
+        topBanner.classList.remove('on');
+    })
+}
 const init = () => {
     scrollTop();
     scrollDown();
+    closeBtn();
 };
 
 init();
