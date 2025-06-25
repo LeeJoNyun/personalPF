@@ -135,6 +135,9 @@ section,
 
 #header.on {
   position: fixed;
+  top: 0;
+  background: #fff;
+  opacity: 0.9;
   // transition: 0.5s ease;
 }
 #section1 {
@@ -213,8 +216,33 @@ section,
     li:nth-child(1) {
       width: 480px;
       height: 100%;
-      background-color: rgb(144, 115, 91);
-      h3 {
+      position: relative;
+      background-image: url(https://img1.daumcdn.net/thumb/C480x520.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/5EIr/image/3bozv-DvPpGiE8XZTux798qYzd4&quot;);
+      .inner_content {
+        width: 280px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20%;
+        color: #fff;
+
+        strong {
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 35px;
+        }
+        span {
+          font-size: 13px;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-weight: 200;
+        }
       }
     }
   }
