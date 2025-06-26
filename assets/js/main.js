@@ -1,40 +1,16 @@
 const get = (target) => document.querySelector(target);
 const getAll = (target) => document.querySelectorAll(target);
 
-const scrollTop = () => {
-    const topBanner = get('.top_banner');
-    window.addEventListener('wheel', (e) => {
-        if (window.scrollY === 0 && e.deltaY < 0) {
-            topBanner.classList.add('on');
-        } else if (window.scrollY > 480) {
-            topBanner.classList.remove('on');
-        }
-    });
-};
-
-const scrollDown = () => {
-    const header = document.querySelector('.header');
-
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 0) {
-            header.classList.add('on');
-        } else {
-            header.classList.remove('on');
-        }
-    });
-};
-
-const closeBtn = () => {
-    const btn = get('.btn_close');
-    const topBanner = get('.top_banner');
-    btn.addEventListener('click', () => {
-        topBanner.classList.remove('on');
+const langToggleEventHandler = () => {
+    const target = get('.lang_arrow');
+    target.addEventListener('click', () => {
+        const langBox = get('.lang');
+        langBox.classList.toggle('on')
     })
 }
+
 const init = () => {
-    scrollTop();
-    scrollDown();
-    closeBtn();
+    langToggleEventHandler();
 };
 
 init();

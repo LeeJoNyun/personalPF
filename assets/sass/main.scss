@@ -1,247 +1,101 @@
-$bannerBgImg: url(https://t1.daumcdn.net/brunch/op/2c1c53c5019f4d6ebde44bc925e47cbf.png);
+$arrowImg: "https://www.monami.com/images/common/lang_arr.gif";
 
-#header,
-section,
-#footer {
+#wrap,
+#header {
   width: 100%;
   min-width: 1600px;
 }
-.top_banner {
-  width: 100%;
-  height: 60px;
-  background-image: $bannerBgImg;
-  .big-banner {
-    height: 100%;
-    display: none;
-  }
-  .small-banner {
-    display: block;
-    width: 960px;
-    height: 60px;
-    margin: auto;
-    a {
-      img {
-        width: 960px;
-        height: 60px;
-      }
-    }
-  }
-}
 
-.top_banner.on {
-  width: 100%;
-  height: 480px;
-  position: relative;
-  background-image: $bannerBgImg;
-  transition: 0.5s ease;
-  .small-banner {
-    width: 960px;
-    height: 60px;
-    margin: auto;
-    display: none;
-  }
-  .big-banner {
-    margin: auto;
-    width: 960px;
-    height: 480px;
-    display: block;
-    .img-link {
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-    .btn_close {
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      background: url(//t1.daumcdn.net/brunch9/static/images/pc/ico_brunch_v9_230901.png)
-        no-repeat 0 0;
-      background-position: -285px 0;
-      border: 0;
-      margin: 200px 0 -38px 130px;
-      z-index: 9999;
-    }
-  }
+.inner {
+  width: 1400px;
+  margin: auto;
 }
 
 #header {
-  height: 60px;
-
-  position: relative;
-
-  .btn_menu {
-    position: absolute;
-
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 1;
-    display: block;
-    width: 27px;
-    height: 27px;
-
-    i {
-      font-size: 27px;
-    }
-  }
-
-  .logo {
-    display: block;
-    width: 135px;
-    height: 30px;
-    overflow: hidden;
-    background-image: url(https://t1.daumcdn.net/brunch9/static/images/pc/logo_brunch_v1_221221.png);
-    background-position: 0 -235px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 35px;
-  }
-
-  .right-menu {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    button {
-      width: 64px;
-      height: 28px;
-      border: 1px solid #959595;
-      border-radius: 16px;
-      color: #666;
-      font-family: Noto Sans Light, sans-serif;
-      font-size: 12px;
-      line-height: 28px;
-      text-align: center;
-      text-decoration: none;
-      background-color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-    }
-    .btn_find {
-      width: 28px;
-      height: 28px;
-      i {
-        font-size: 28px;
-      }
-    }
-  }
-}
-
-#header.on {
-  position: fixed;
-  top: 0;
-  background: #fff;
-  opacity: 0.9;
-  // transition: 0.5s ease;
-}
-#section1 {
-  height: 2000px;
-  article {
-    width: 960px;
-    margin: auto;
-    h2 {
-      font-family: "Nanum Myeongjo", sans-serif;
-      font-size: 40px;
-      font-weight: 400;
-      letter-spacing: -0.05em;
-      text-align: left;
-      position: relative;
-      &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        right: 365px;
-        top: 3px;
-        width: 40px;
-        height: 40px;
-        background-image: url(../icons/pngwing.com.png);
-        background-size: cover; // 또는 contain
-        background-repeat: no-repeat;
-      }
-    }
-    .desc_brunch {
-      .part {
-        color: #cacaca;
-        font-family: "Nanum Myeongjo", sans-serif;
-        font-size: 32px;
-        letter-spacing: -0.05em;
-        line-height: 46px;
-      }
-      .part:nth-child(2) {
-        color: #dddcdc;
-      }
-      .part:nth-child(3) {
-        color: #e7e6e6;
-      }
-    }
-  }
-
-  .notice_banner {
-    width: 960px;
-    margin: auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 3px;
-    .icon-notice {
-      padding-top: 2px;
-      color: #00c6be;
-      float: right;
-      font-family: "Georgia", sans-serif;
-      font-size: 11px;
-      font-style: italic;
-    }
-
-    span {
-      a {
-        display: block;
-        color: #959595;
-        font-size: 11px;
-      }
-    }
-  }
-
-  .banner-list {
-    width: 960px;
-    height: 520px;
+  .inner {
+    height: 150px;
     border: 1px solid #000;
-    margin: auto;
-    li:nth-child(1) {
-      width: 480px;
-      height: 100%;
-      position: relative;
-      background-image: url(https://img1.daumcdn.net/thumb/C480x520.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/5EIr/image/3bozv-DvPpGiE8XZTux798qYzd4&quot;);
-      .inner_content {
-        width: 280px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 20%;
-        color: #fff;
+    .top_header {
+      .left_menu {
+        .lang {
+          width: 88px;
+          height: 25.59px;
+          border: 0.2px solid #dcdcdc;
+          border-radius: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden;
+          transition: 0.5s ease;
+          li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 25.59px;
+            position: relative;
+            a {
+              position: relative;
+              font-size: 14px;
+            }
 
-        strong {
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          font-size: 35px;
-        }
-        span {
-          font-size: 13px;
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          font-weight: 200;
+            &:nth-child(1) a::before {
+              content: "";
+              width: 13px;
+              height: 11px;
+              position: absolute;
+              left: -16px;
+              top: 7px;
+              background-image: url(https://www.monami.com/images/common/lang_kor.gif);
+            }
+            &:nth-child(2) {
+              opacity: 0;
+              visibility: hidden;
+              max-height: 0;
+              transition: all 0.5s ease;
+              overflow: hidden;
+            }
+
+            .lang_arrow {
+              width: 7px;
+              height: 4px;
+              background-image: url($arrowImg);
+              background-repeat: no-repeat;
+              background-size: contain;
+              position: absolute;
+              right: 10px;
+              top: 11px;
+              cursor: pointer;
+            }
+          }
+          &.on {
+            height: 51px;
+            .lang_arrow {
+              transform: rotate(180deg);
+              transition: 0.5s ease;
+            }
+            li:nth-child(2) {
+              opacity: 1;
+              visibility: visible;
+              max-height: 30px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              a {
+                position: relative;
+                &::before {
+                  content: "";
+                  width: 13px;
+                  height: 11px;
+                  position: absolute;
+                  left: -16px;
+                  top: 7px;
+                  background-image: url(https://www.monami.com/images/common/lang_eng.gif);
+                }
+              }
+            }
+          }
         }
       }
     }
