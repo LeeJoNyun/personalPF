@@ -131,19 +131,19 @@
 #header .top_header .inner .menu_box .right_menu .top-menu li:nth-child(1) a::after {
   content: "";
   width: 1px;
-  height: 14px;
+  height: 12px;
   background-color: #9b9a9a;
   position: absolute;
-  left: 36px;
+  left: 41px;
   top: 2px;
 }
 #header .top_header .inner .menu_box .right_menu .top-menu li:nth-child(2) a::after {
   content: "";
   width: 1px;
-  height: 14px;
+  height: 12px;
   background-color: #9b9a9a;
   position: absolute;
-  left: 51px;
+  left: 58px;
   top: 2px;
 }
 #header .bottom_header {
@@ -399,7 +399,6 @@
 #section2 {
   background: #eee;
   padding-top: 75px;
-  padding-bottom: 90px;
 }
 #section2 .title {
   text-align: center;
@@ -519,5 +518,26 @@
   top: -17px;
   left: 50%;
   transform: translateX(-50%);
+  width: 100px;
+  height: 27px;
+  display: block;
+  text-align: center;
+  background-color: #eeeeee;
+}
+#section2 .slide_info strong {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+#section3 {
+  width: 100%;
+}
+#section3 .video {
+  width: 100%;
+}
+#section3 .video .bgvid {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

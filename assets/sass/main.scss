@@ -138,10 +138,10 @@ $arrowImg: "https://www.monami.com/images/common/lang_arr.gif";
                   &::after {
                     content: "";
                     width: 1px;
-                    height: 14px;
+                    height: 12px;
                     background-color: #9b9a9a;
                     position: absolute;
-                    left: 36px;
+                    left: 41px;
                     top: 2px;
                   }
                 }
@@ -151,10 +151,10 @@ $arrowImg: "https://www.monami.com/images/common/lang_arr.gif";
                   &::after {
                     content: "";
                     width: 1px;
-                    height: 14px;
+                    height: 12px;
                     background-color: #9b9a9a;
                     position: absolute;
-                    left: 51px;
+                    left: 58px;
                     top: 2px;
                   }
                 }
@@ -455,7 +455,6 @@ $arrowImg: "https://www.monami.com/images/common/lang_arr.gif";
 #section2 {
   background: #eee;
   padding-top: 75px;
-  padding-bottom: 90px;
   .title {
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -581,6 +580,27 @@ $arrowImg: "https://www.monami.com/images/common/lang_arr.gif";
       top: -17px;
       left: 50%;
       transform: translateX(-50%);
+      width: 100px;
+      height: 27px;
+      display: block;
+      text-align: center;
+      background-color: #eeeeee;
+    }
+    strong {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 12px;
+    }
+  }
+}
+
+#section3 {
+  width: 100%;
+  .video {
+    width: 100%;
+    .bgvid {
+      width: 100%;
     }
   }
 }
