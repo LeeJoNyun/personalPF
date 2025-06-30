@@ -599,8 +599,61 @@ $arrowImg: "https://www.monami.com/images/common/lang_arr.gif";
   width: 100%;
   .video {
     width: 100%;
-    .bgvid {
+    .bg_video {
       width: 100%;
+    }
+  }
+}
+
+#section4 {
+  .inner {
+    .left_box {
+      width: 700px;
+      height: 362px;
+      .box_top {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          display: inline-block;
+          font-size: 24px;
+          font-weight: bold;
+          position: relative;
+          &::after {
+            content: "";
+            width: 26px;
+            height: 4px;
+            background-color: #c40f39;
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+          }
+        }
+        a {
+          display: block;
+          vertical-align: middle;
+          height: 31px;
+          font-size: 11px;
+          line-height: 31px;
+          position: relative;
+          &::after {
+            content: "";
+            height: 1px;
+            background: #000;
+            width: 35px;
+            position: absolute;
+            left: 0;
+            bottom: 6px;
+          }
+        }
+      }
+
+      .content {
+        img {
+          width: 165px;
+          height: 120px;
+        }
+      }
     }
   }
 }

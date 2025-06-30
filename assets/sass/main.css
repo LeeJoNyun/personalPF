@@ -537,7 +537,53 @@
 #section3 .video {
   width: 100%;
 }
-#section3 .video .bgvid {
+#section3 .video .bg_video {
   width: 100%;
+}
+
+#section4 .inner .left_box {
+  width: 700px;
+  height: 362px;
+}
+#section4 .inner .left_box .box_top {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#section4 .inner .left_box .box_top h2 {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+}
+#section4 .inner .left_box .box_top h2::after {
+  content: "";
+  width: 26px;
+  height: 4px;
+  background-color: #c40f39;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+}
+#section4 .inner .left_box .box_top a {
+  display: block;
+  vertical-align: middle;
+  height: 31px;
+  font-size: 11px;
+  line-height: 31px;
+  position: relative;
+}
+#section4 .inner .left_box .box_top a::after {
+  content: "";
+  height: 1px;
+  background: #000;
+  width: 35px;
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+}
+#section4 .inner .left_box .content img {
+  width: 165px;
+  height: 120px;
 }
 /*# sourceMappingURL=main.css.map */

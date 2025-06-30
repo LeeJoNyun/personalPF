@@ -15,13 +15,11 @@ const playBgVideo = () => {
         const video = get("#player")
         const rect = section.getBoundingClientRect();
 
-        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-
-        if (isVisible) {
-            video.play();
-        } else {
-            video.pause();
-        }
+        // if (rect.top < 680) {
+        //     video.play();
+        // } else {
+        //     video.pause();
+        // }
     });
 }
 const init = () => {
