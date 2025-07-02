@@ -594,31 +594,39 @@ $arrowImg: "https://www.monami.com/images/common/lang_arr.gif";
     }
   }
 }
-
 #section3 {
-  width: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+
   .video {
-    width: 100%;
+    width: 100% !important;
+    height: 100%;
     .bg_video {
+      display: block;
+
       width: 100%;
+      height: 100%;
     }
   }
 }
 
 #section4 {
   .inner {
+    display: flex;
     .left_box {
-      width: 700px;
+      width: 650px;
       height: 362px;
+      padding: 50px 40px 0 0;
       .box_top {
-        margin-top: 50px;
         display: flex;
         justify-content: space-between;
         h2 {
           display: inline-block;
           font-size: 24px;
-          font-weight: bold;
+          font-weight: 600;
           position: relative;
+          color: #000;
           &::after {
             content: "";
             width: 26px;
@@ -649,9 +657,141 @@ $arrowImg: "https://www.monami.com/images/common/lang_arr.gif";
       }
 
       .content {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #8f8b8b;
+
         img {
           width: 165px;
           height: 120px;
+        }
+        .title {
+          height: 120px;
+          li {
+            width: 441px;
+            position: relative;
+            a {
+              height: auto;
+              strong {
+                display: inline-block;
+                width: 300px;
+                font-size: 22px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                font-weight: 500;
+              }
+              p {
+                width: 350px;
+                font-size: 14px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                display: -webkit-box;
+                -webkit-line-clamp: 2; // 원하는 라인수
+                -webkit-box-orient: vertical;
+              }
+              span {
+                font-size: 12px;
+                color: #8f8b8b;
+                font-weight: 500;
+                position: absolute;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .content_list {
+        width: 650px;
+        ul {
+          li {
+            display: block;
+            position: relative;
+            width: 100%;
+
+            a {
+              display: inline-block;
+              width: 400px;
+              font-size: 12px;
+              color: #8f8b8b;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+            span {
+              width: 68px;
+              font-size: 12px;
+              color: #8f8b8b;
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .right_box {
+      .inquiry {
+        width: 350px;
+        height: 355px;
+
+        background-image: url(https://www.monami.com/images/main/inquiry_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        display: flex; // Flex 사용
+        flex-direction: column; // 세로로 정렬
+        align-items: center; // 수평 가운데 정렬
+        justify-content: center; // 수직 가운데 정렬
+        text-align: center; // 텍스트 수평 정렬
+
+        h2 {
+          font-size: 24px;
+          font-weight: bold;
+          padding-bottom: 20px;
+          position: relative;
+          &::before {
+            content: "";
+            width: 50px;
+            height: 50px;
+            background-image: url(https://www.monami.com/images/main/inquiry_tit_bg.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -60px;
+          }
+          &::after {
+            content: "";
+            width: 26px;
+            height: 4px;
+            background-color: #c40f39;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 8px;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: #6a6a6a;
+          margin-top: 20px;
+          margin-bottom: 60px;
+        }
+        a {
+          color: #c40f39;
+          width: 171px;
+          height: 39px;
+          border: 2px solid #c40f39;
+          border-radius: 25px;
+          line-height: 39px;
         }
       }
     }
