@@ -15,16 +15,28 @@ const playBgVideo = () => {
         const video = get("#player")
         const rect = section.getBoundingClientRect();
 
-        // if (rect.top < 680) {
-        //     video.play();
-        // } else {
-        //     video.pause();
-        // }
+        if (rect.top < 680) {
+            video.muted = false;
+            video.play();
+        } else {
+            video.muted = true;
+            video.pause();
+        }
     });
+}
+
+const familySiteToggle = () => {
+    const tit = get('#footer .inner .select_box .tit');
+    const selectBox = get('#footer .inner .select_box');
+    tit.addEventListener('click', () => {
+        tit.classList.toggle('on');
+        selectBox.classList.toggle('on');
+    })
 }
 const init = () => {
     langToggleEventHandler();
     playBgVideo();
+    familySiteToggle();
 };
 
 init();

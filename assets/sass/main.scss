@@ -1011,22 +1011,24 @@ $arrowImg: "https://www.monami.com/images/common/lang_arr.gif";
       }
 
       .select_box {
+        display: block;
         width: 242px;
-        height: 34px;
         border: 1px solid#878787;
-        // padding: 0 15px;
+        height: 34px;
         font-size: 13px;
         line-height: 34px;
         position: absolute;
         right: 0;
         border-radius: 6px;
-        a {
+        background: #111010;
+        .tit {
           padding: 0 20px;
           display: inline-block;
           width: 242px;
           height: 34px;
           color: #878787;
           cursor: pointer;
+
           &::after {
             content: "";
             width: 10px;
@@ -1035,12 +1037,48 @@ $arrowImg: "https://www.monami.com/images/common/lang_arr.gif";
             background-repeat: no-repeat;
             position: absolute;
             right: 14px;
-            bottom: 50%;
-            transform: rotate(-180deg) translateY(-50%);
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+            transform-origin: center;
             transition: 0.5s;
           }
           &.on {
-            transform: rotate(0deg) translateY(-50%);
+            &::after {
+              transform: rotate(0deg);
+            }
+          }
+        }
+        ul {
+          display: none;
+          width: 100%;
+          height: 0;
+          position: relative;
+          top: -39px;
+          left: -1px;
+          background: #000;
+          transition: height 0.5s;
+          li {
+            padding: 0 20px;
+            a {
+              color: #989898;
+            }
+          }
+        }
+
+        &.on {
+          border-radius: unset;
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px;
+          border-top: none;
+
+          ul {
+            display: block;
+            border: 1px solid#878787;
+            border-bottom: none;
+            border-top-right-radius: 6px;
+            border-top-left-radius: 6px;
+            top: -307px;
+            height: auto;
           }
         }
       }
